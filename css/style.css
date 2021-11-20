@@ -2,3 +2,70 @@
     display:none;
 }
 
+html {
+    background: no-repeat center center fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+body, html {
+    margin: 0;
+    height: 100%;
+    text-shadow: 2px 2px 8px grey;
+}
+
+body {
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#clock {
+    font-size:x-large;
+}
+
+#inputbox, #todobox {
+    background-color:transparent;
+    color: white;
+    border-color:transparent;
+    border-bottom-color:white;
+    max-width: 30%;
+    min-width: 250px;
+    height:30px; 
+    text-shadow: 2px 2px 8px grey;
+}
+
+#inputbox::placeholder, #todobox::placeholder{
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    background-color: transparent;
+    text-shadow: 2px 2px 8px grey;
+}
+
+#todobox::placeholder {
+    font-size:medium;
+}
+
+#container {
+    border: solid 1px red;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#quotediv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: italic;
+    }
+
+#quotediv span:last-child {
+    font-family:cursive;
+    color:lightgrey
+    }
