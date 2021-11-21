@@ -9,6 +9,10 @@ html {
     background-size: cover;
 }
 
+*{
+    border: solid 1px grey;
+
+}
 
 
 body, html {
@@ -63,9 +67,24 @@ body {
     flex-direction: column;
     align-items: center;
     font-style: italic;
+    max-width:50%;
+    margin-bottom:10%;
     }
 
 #quotediv span:last-child {
-    font-family:cursive;
-    color:lightgrey
+    color:lightgrey;
+    margin-top:1%;
     }
+
+#weather-div {
+    margin-bottom:10%;
+}
+
+#todo-list {
+    min-height: 10%;
+    max-height:10%;
+}
+
+.deletebtn {
+    background-color: transparent;
+}

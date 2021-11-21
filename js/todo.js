@@ -42,7 +42,8 @@ function addToDo(newToDoObj) {
     const deleteBtn = document.createElement("button");
 
     li.id = newToDoObj.id;
-    deleteBtn.innerHTML = "Delete";
+    deleteBtn.innerHTML = "❌";
+    deleteBtn.classList.add("deletebtn");
     deleteBtn.addEventListener("click", deleteToDo);
     li.appendChild(span);
     li.appendChild(deleteBtn);
