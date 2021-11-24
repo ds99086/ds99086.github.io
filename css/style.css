@@ -9,25 +9,32 @@ html {
     background-size: cover;
 }
 
-*{
-    border: solid 1px grey;
-
-}
-
-
 body, html {
     margin: 0;
     height: 100%;
-    text-shadow: 2px 2px 8px grey;
+    /* text-shadow: 2px 2px 8px grey; */
 }
 
 body {
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Outfit';
+}
+
+#clock h2 {
+    font-size:6rem;
+    font-family: 'Raleway';
+    margin:0;
 }
 
 #clock {
-    font-size:x-large;
+    margin:0;
+    display:flex;
+    position:relative;
+    left:.5rem;
+}
+
+#greeting:first-child {
+    margin:0;
 }
 
 #inputbox, #todobox {
@@ -38,7 +45,7 @@ body {
     max-width: 30%;
     min-width: 250px;
     height:30px; 
-    text-shadow: 2px 2px 8px grey;
+    
 }
 
 #inputbox::placeholder, #todobox::placeholder{
@@ -46,7 +53,7 @@ body {
     text-align: center;
     font-size: x-large;
     background-color: transparent;
-    text-shadow: 2px 2px 8px grey;
+    
 }
 
 #todobox::placeholder {
@@ -54,7 +61,7 @@ body {
 }
 
 #container {
-    border: solid 1px red;
+
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -68,16 +75,21 @@ body {
     align-items: center;
     font-style: italic;
     max-width:50%;
-    margin-bottom:10%;
+    font-size: 0.85rem;
+    margin-bottom:2rem;
     }
 
 #quotediv span:last-child {
     color:lightgrey;
-    margin-top:1%;
+    margin-top:1rem;
     }
 
 #weather-div {
-    margin-bottom:10%;
+    margin-top: 0.5rem;
+    margin-bottom:1rem;
+    display:flex;
+    flex-direction: column;
+
 }
 
 #todo-list {

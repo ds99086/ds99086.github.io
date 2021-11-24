@@ -9,4 +9,18 @@ const chosenImage = images[Math.floor(Math.random()*images.length)];
 
 // document.body.appendChild(backgroundImg)
 
-document.documentElement.style.backgroundImage = `url(/img/${chosenImage})`;
+
+
+// let imageURL = null;
+const NASA_API_KEY = "93vVaqb45raLaNdBk8fcHWbwGdVxTXkSCcuXpPfM";
+const BASE_URL = `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}`;
+fetch(BASE_URL)
+.then(response => 
+    response.json()
+).then(data => {
+    const imageURL = data.hdurl
+    console.log(imageURL)
+    document.documentElement.style.backgroundImage = `url(${imageURL})`
+
+})
+
