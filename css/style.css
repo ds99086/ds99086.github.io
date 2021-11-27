@@ -32,6 +32,9 @@ body {
     position:relative;
     left:.5rem;
 }
+#clock h3 {
+    margin-left: 0.2rem;
+}
 
 #greeting:first-child {
     margin:0;
@@ -77,6 +80,7 @@ body {
     max-width:50%;
     font-size: 0.85rem;
     margin-bottom:2rem;
+    text-align: center;
     }
 
 #quotediv span:last-child {
@@ -89,7 +93,7 @@ body {
     margin-bottom:1rem;
     display:flex;
     flex-direction: column;
-
+    text-align: center;
 }
 
 #todo-list {
@@ -99,4 +103,12 @@ body {
 
 .deletebtn {
     background-color: transparent;
+    font-size: 0.6rem;
+    font-family: 'Outfit';
+    color: white;
+    position: relative;
+    bottom:0.1rem;
+    margin-left: 0.5rem;
+    border-color: white;
+    border-style: dashed;
 }

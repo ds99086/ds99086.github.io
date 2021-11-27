@@ -18,8 +18,8 @@ fetch(BASE_URL)
 .then(response => 
     response.json()
 ).then(data => {
-    const imageURL = data.hdurl
-    console.log(imageURL)
+    const imageURL = data.url
+    //console.log(imageURL)
     document.documentElement.style.backgroundImage = `url(${imageURL})`
 
 })
