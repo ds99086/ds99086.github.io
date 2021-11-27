@@ -14,7 +14,10 @@ function getClock() {
     } else {
         ampm = "PM"
     }
-    hours = hours % 12;
+    if (hours > 12) {
+        hours = hours % 12;  
+    }
+  
 
     clockDiv.innerHTML = `${hours}:${minutes}`
     ampmDiv.innerHTML = ampm;
