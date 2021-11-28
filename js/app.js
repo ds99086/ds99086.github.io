@@ -6,7 +6,7 @@ const loginInput = loginForm.querySelector("input");
 const greetingDiv = document.querySelector("#greeting");
 const greetingTxt = greetingDiv.querySelector("h1");
 const savedUsername = localStorage.getItem(USERNAME_KEY);
-
+const container = document.querySelector("#container");
 
 //set a name to greeting and make it visible
 function setGreeting(name) {
@@ -34,3 +34,4 @@ if (savedUsername === null) {
 
 
 loginForm.addEventListener("submit", onLogInSubmit);
+

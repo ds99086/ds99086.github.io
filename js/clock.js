@@ -7,8 +7,6 @@ function getClock() {
     const minutes = String(date.getMinutes()).padStart(2, "0");
     let ampm = ""
 
-    //console.log(Math.floor(hours/12));
-
     if(Math.floor(hours/12) == 0) {
         ampm = "AM";
     } else {
@@ -17,11 +15,9 @@ function getClock() {
     if (hours > 12) {
         hours = hours % 12;  
     }
-  
 
     clockDiv.innerHTML = `${hours}:${minutes}`
     ampmDiv.innerHTML = ampm;
-
 }
 getClock();
 setInterval(getClock, 1000);

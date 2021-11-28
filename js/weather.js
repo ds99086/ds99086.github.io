@@ -1,7 +1,6 @@
 const API_KEY = "56ec5c4120df9ae4137d4f10ce6c9404";
 
 //success call back. JS will give a geolocation position object as input parameter.
-
 function onGeoSuccess(position) {
     const latitude = (position.coords.latitude);
     const longitude = (position.coords.longitude);
@@ -24,6 +23,3 @@ function onGeoError() {
 
 //get current position
 navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);
-
-
-//api.openweathermap.org/data/2.5/weather?lat={-36.896768}&lon={174.7812352}&appid={56ec5c4120df9ae4137d4f10ce6c9404}

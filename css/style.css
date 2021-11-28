@@ -51,6 +51,10 @@ body {
     
 }
 
+input[type="text"], textarea {
+    background-color : #d1d1d1; 
+  }
+
 #inputbox::placeholder, #todobox::placeholder{
     color: white;
     text-align: center;
